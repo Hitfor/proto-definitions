@@ -1,4 +1,4 @@
-module proto-definitions
+module github.com/Hitfor/proto-definitions
 
 go 1.23.2
 
