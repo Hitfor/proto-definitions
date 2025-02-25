@@ -19,9 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	AuthService_Login_FullMethodName          = "/auth.AuthService/Login"
-	AuthService_Register_FullMethodName       = "/auth.AuthService/Register"
-	AuthService_ForgotPassword_FullMethodName = "/auth.AuthService/ForgotPassword"
+	AuthService_Login_FullMethodName          = "/auth.v1.AuthService/Login"
+	AuthService_Register_FullMethodName       = "/auth.v1.AuthService/Register"
+	AuthService_ForgotPassword_FullMethodName = "/auth.v1.AuthService/ForgotPassword"
 )
 
 // AuthServiceClient is the client API for AuthService service.
@@ -176,7 +176,7 @@ func _AuthService_ForgotPassword_Handler(srv interface{}, ctx context.Context, d
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var AuthService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "auth.AuthService",
+	ServiceName: "auth.v1.AuthService",
 	HandlerType: (*AuthServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
