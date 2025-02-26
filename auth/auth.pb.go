@@ -11,7 +11,6 @@ import (
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
-	debug "runtime/debug"
 )
 
 const (
@@ -306,7 +305,6 @@ var file_auth_proto_depIdxs = []int32{
 func init() { file_auth_proto_init() }
 func file_auth_proto_init() {
 	if File_auth_proto != nil {
-		debug.PrintStack()
 		return
 	}
 	type x struct{}
