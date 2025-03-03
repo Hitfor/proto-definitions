@@ -12,8 +12,7 @@ service AuthService {
 
 message LoginRequest {
     string email = 1;
-    string username = 2;
-    string password = 3;
+    string password = 2;
 }
 
 message RegistrationRequest {
